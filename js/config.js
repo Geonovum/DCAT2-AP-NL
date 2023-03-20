@@ -17,20 +17,15 @@ let respecConfig = {
   editors:
     [
       {
-        name: "Logius Standaarden",
-        company: "Logius",
-        companyURL: "https://github.com/Logius-standaarden",
+        name: "Geonovum",
+        company: "Geonovum",
+        companyURL: "https://github.com/Geonovum",
       }
     ],
   authors:
     [
-      {
-        name: "Logius Standaarden",
-        company: "Logius",
-        companyURL: "https://github.com/Logius-standaarden",
-      }
     ],
-  github: "https://github.com/Logius-standaarden/ReSpec-template",
+  github: "https://github.com/Geonovum/DCAT2-AP-NL",
 
 
   // Create PDF and link to file in header (optional):
