@@ -13,7 +13,8 @@ let respecConfig = {
   previousPublishDate: "2014-05-01",
   previousMaturity: "EO",
   title: "titleText",
-  content: {"ch01": "informative", "ch02": "", "mermaid": ""},
+  content: {"samenvatting": "", "inleiding": "", "klassen": "", "conformiteit": ""},
+
   editors:
     [
       {
