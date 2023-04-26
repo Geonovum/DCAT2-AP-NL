@@ -10,29 +10,22 @@
   <script class="remove"> respecConfig = {...organisationConfig, ...respecConfig}</script>
   <script>document.title = respecConfig.title</script>
   <title>Default</title>
-  <link rel="shortcut icon" type="image/x-icon" href="https://gitdocumentatie.logius.nl/publicatie/respec/style/logos/logius.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico" />
   <script src="https://gitdocumentatie.logius.nl/publicatie/respec/builds/respec-nlgov.js" class="remove" async></script>
 </head>
 
 <body>
-  <section id="abstract" data-include-format="markdown" data-include="abstract.md">
+  <section id="abstract" data-include-format="markdown" data-include="abstract.md"></section>
   <section id="sotd"></section><!-- Wordt automatisch gevuld -->
-  <script>
-    let content = "";
 
-    const getClass = function(key) {
-      if (respecConfig.content[key]!==""){return ` class="${respecConfig.content[key]}"`}
-    }
+  <!-- voeg hier je eigen hoofdstukken toe -->
+  <section data-include-format="markdown" data-include="./inleiding.md"></section>
+  <section data-include-format="markdown" data-include="./klassen.md"></section>
+  <section data-include-format="markdown" data-include="./conformiteit.md"></section>
 
-    for (let contentKey in respecConfig.content) {
-      content += `<section data-include-format="markdown" data-include="${contentKey}.md" ${getClass(contentKey)||""}></section>`
-    }
-
-    document.getElementById("sotd").insertAdjacentHTML('afterend', content);
-  </script>
-<!--   <section id="inleiding" data-include-format="markdown" data-include="inleiding.md">
-  <section id="klassen" data-include-format="markdown" data-include="klassen.md">
-  <section id="conformiteit" data-include-format="markdown" data-include="conformiteit.md"> -->
+  <section id='conformance'></section>
+  <section id='tof'></section>
+  <section id="index"></section>
 </body>
 
 </html>

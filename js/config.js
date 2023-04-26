@@ -1,32 +1,49 @@
 let respecConfig = {
   useLogo: true,
   useLabel: true,
-  license: "cc0",
+  //default voor Geonovum is cc-by, eventueel is het mogelijk een andere licentie (cc0 of cc-by-nd) hier te kiezen voor het document.
+  //license: "cc-by",
   specStatus: "WV",
-  specType: "HR",
-  pubDomain: "dk",
-  shortName: "template",
-  publishDate: "2022-06-24",
-  publishVersion: "0.0.2",
-  
-  previousVersion: "0.0.1",
-  previousPublishDate: "2014-05-01",
-  previousMaturity: "EO",
-  title: "titleText",
-  content: {"samenvatting": "", "inleiding": "", "klassen": "", "conformiteit": ""},
-
+  specType: "ST",
+  pubDomain: "dcat",
+  sotdText: "wv",
+  shortName: "DCAT2-AP-NL",
+  publishDate: "2023-03-28",
+  //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we standaard alleen met datum als onderdeel van de permanente URI.
+  //publishVersion: "0.0.2",
+  //previousVersion: "0.0.1",
+  // previousPublishDate: "2014-05-01",
+  // previousMaturity: "EO",
+  title: "DCAT-AP-NL",
+  content: {"inleiding": ""},
   editors:
     [
       {
-        name: "Geonovum",
+        name: "Jan Skornsek",
         company: "Geonovum",
-        companyURL: "https://github.com/Geonovum",
+        companyURL: "https://www.geonovum.nl",
+      },
+      {
+        name: "Ine de Visser",
+        company: "Geonovum",
+        companyURL: "https://www.geonovum.nl",
+      },
+      {
+        name: "Gabriella Wiersma",
+        company: "Geonovum",
+        companyURL: "https://www.geonovum.nl",
       }
     ],
   authors:
     [
+      {
+        name: "voornaam achternaam",
+        company: "Geonovum",
+        companyURL: "https://www.geonovum.nl",
+      }
     ],
-  github: "https://github.com/Geonovum/DCAT2-AP-NL",
+  //neem hier de URL van de github repository op waar het respec document in staat
+  github: "https://github.com/geonovum/DCAT2-AP-NL",
 
 
   // Create PDF and link to file in header (optional):

@@ -1,4 +1,4 @@
-# Niet-normatieve deel
+# Inleiding
 
 Bijvoorbeeld een introductie.
 
