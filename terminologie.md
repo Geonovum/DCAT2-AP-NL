@@ -16,7 +16,7 @@ Een **leverancier** is een gegevensaanbieder (bijvoorbeeld een dataportaal dat m
 
 Een **ontvanger** is een gebruiker van gegevens (bijvoorbeeld een toepassing die metadata van een dataportaal verwerkt).
 
-Bindende niveaus (verplicht/aanbevolen/optioneel) gelden alleen voor leveranciers. Ontvangers MOETEN altijd in staat zijn om informatie over alle instanties van alle klassen en al hun eigenschappen te verwerken (maar niet noodzakelijkerwijs te parsen, converteren, opslaan, doorzoekbaar maken of weergeven, enz.). In de volgende secties worden klassen en eigenschappen aangeduid als "verplicht", "aanbevolen" of "optioneel". Deze termen hebben de volgende betekenis:
+Het DCAT-AP NL applicatieprofiel verdeelt de klassen en de eigenschappen in 3 verschillende niveaus. Daarbij geldt dat de niveaus (verplicht/aanbevolen/optioneel) alleen gelden voor de leveranciers. Ontvangers MOETEN altijd in staat zijn om informatie over alle instanties van alle klassen en al hun eigenschappen te verwerken (maar niet noodzakelijkerwijs te parsen, converteren, opslaan, doorzoekbaar maken of weergeven, enz.). In de volgende secties worden klassen en eigenschappen aangeduid als "verplicht", "aanbevolen" of "optioneel". Deze termen hebben de volgende betekenis:
 
 - **Verplichte klasse**: Een leverancier MOET informatie verstrekken over instanties van deze klasse. Een ontvanger MOET informatie over instanties van deze klasse kunnen verwerken.
 - **Aanbevolen klasse**: Een leverancier BEHOORT informatie te verstrekken over instanties van deze klasse indien dergelijke informatie beschikbaar is. Een ontvanger MOET informatie over instanties van deze klasse kunnen verwerken.
