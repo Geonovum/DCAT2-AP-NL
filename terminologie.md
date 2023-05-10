@@ -28,4 +28,4 @@ Bindende niveaus (verplicht/aanbevolen/optioneel) gelden alleen voor leverancier
 
 In de gegeven context betekent de term "verwerken" dat ontvangers inkomende gegevens moeten accepteren en transparant beschikbaar moeten stellen voor toepassingen en diensten. Hiermee wordt niet voorgeschreven of geïmpliceerd welk type gegevensverwerking uiteindelijk door de betreffende toepassingen en diensten wordt uitgevoerd.
 
-De termen MOET, BEHOORT en MAG worden in dit document gebruikt volgens hun betekenissen gedefinieerd in RFC211 of RULESPEAK
+De termen MOET, BEHOORT en MAG worden in dit document gebruikt volgens hun betekenissen gedefinieerd in [RFC211](https://www.rfc-editor.org/rfc/rfc2119 "RFC211").
