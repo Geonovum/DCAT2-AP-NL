@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
-<meta name="generator" content="ReSpec 32.7.1">
+<meta name="generator" content="ReSpec 34.1.1">
 <style>
 .issue-label{text-transform:initial}
 .warning>p:first-child{margin-top:0}
@@ -349,26 +349,25 @@ ul.index code{color:inherit}
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/base.css"></head>
 
-<body class="h-entry toc-inline"><div class="head">
+<body class="h-entry"><div class="head">
     <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg" width="132">
   </a> <h1 id="title" class="title">DCAT-AP-NL</h1>
     
     <h2>
       Geonovum Standaard<br>
       Werkversie
-      <time class="dt-published" datetime="2023-03-28">01 mei 2023</time>
+      <time class="dt-published" datetime="2023-03-28">15 mei 2023</time>
     </h2>
     <dl>
-      <dt>Deze versie:</dt><dd class="status">
-              <a class="u-url status" href="https://docs.geostandaarden.nl/dcat/wv-st-dcat2-ap-nl-2023-03-28">https://docs.geostandaarden.nl/dcat/wv-st-dcat2-ap-nl-2023-03-28</a>
-            </dd><dt>Laatst gepubliceerde versie:</dt><dd>
+      
+      <dt>Laatst gepubliceerde versie:</dt><dd>
               <a href="https://docs.geostandaarden.nl/dcat/dcat2-ap-nl/">https://docs.geostandaarden.nl/dcat/dcat2-ap-nl/</a>
             </dd>
-      <dt>Laatste werkversie:</dt><dd><a href="https://geonovum.github.io/dcat2-ap-nl">https://geonovum.github.io/dcat2-ap-nl</a></dd>
       
       
       
-      <dt>Vorige versie</dt><dd><a href="https://docs.geostandaarden.nl/dcat/previousmaturity-st-dcat2-ap-nl-previouspublishdate">https://docs.geostandaarden.nl/dcat/previousmaturity-st-dcat2-ap-nl-previouspublishdate</a></dd>
+      
+      
       
       <dt>Redacteurs:</dt>
       <dd class="editor p-author h-card vcard">
@@ -406,26 +405,509 @@ ul.index code{color:inherit}
   </div>
   <section id="abstract" class="introductory"><h2>Samenvatting</h2><h1>Samenvatting</h1>
 </section>
-  <section id="sotd" class="introductory"></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#overzicht"><bdi class="secno">2. </bdi>Overzicht</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#entiteiten"><bdi class="secno">2.1 </bdi>Entiteiten</a></li><li class="tocline"><a class="tocxref" href="#overig"><bdi class="secno">2.2 </bdi>Overig</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformiteit"><bdi class="secno">3. </bdi>Conformiteit</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#conventies"><bdi class="secno">3.1 </bdi>Conventies</a></li><li class="tocline"><a class="tocxref" href="#toepassing-en-gebruiksadvies"><bdi class="secno">3.2 </bdi>Toepassing en gebruiksadvies</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">4. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
+  <section id="sotd" class="introductory"></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#uitgangspunten"><bdi class="secno">1.1 </bdi>Uitgangspunten</a></li></ol></li><li class="tocline"><a class="tocxref" href="#terminologie"><bdi class="secno">2. </bdi>Terminologie</a></li><li class="tocline"><a class="tocxref" href="#overzicht"><bdi class="secno">3. </bdi>Overzicht</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#entiteiten"><bdi class="secno">3.1 </bdi>Entiteiten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#catalogus"><bdi class="secno">3.1.1 </bdi>Catalogus</a></li><li class="tocline"><a class="tocxref" href="#dataset"><bdi class="secno">3.1.2 </bdi>Dataset</a></li><li class="tocline"><a class="tocxref" href="#dataservice"><bdi class="secno">3.1.3 </bdi>Dataservice</a></li><li class="tocline"><a class="tocxref" href="#distributie"><bdi class="secno">3.1.4 </bdi>Distributie</a></li><li class="tocline"><a class="tocxref" href="#catalog-record"><bdi class="secno">3.1.5 </bdi>Catalog Record</a></li></ol></li><li class="tocline"><a class="tocxref" href="#overig"><bdi class="secno">3.2 </bdi>Overig</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformiteit"><bdi class="secno">4. </bdi>Conformiteit</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#conventies"><bdi class="secno">4.1 </bdi>Conventies</a></li><li class="tocline"><a class="tocxref" href="#toepassing-en-gebruiksadvies"><bdi class="secno">4.2 </bdi>Toepassing en gebruiksadvies</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">5. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
 
   
   <section id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div>
-<p>Bijvoorbeeld een introductie.</p>
-<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span><span class="issue-label">: index</span></div><p class="">
+<p>Om gestandardiseerd metadata uit te wisselen tussen verschillende dataportalen heeft Europa het DCAT-AP profiel ontwikkeld. DCAT-AP is gebaseerd op de "Data Catalog Vocabulary" (DCAT) -specificatie, die wordt ontwikkeld door de Dataset Exchange Working Group. DCAT is een RDF-vocabulaire met als doel de interoperabiliteit tussen online datacatalogi te verbeteren. De specificatie "Data Catalog Vocabulary" (DCAT) werd op 16 januari 2014 door het W3C gepubliceerd als "W3C Recommendation" en is inmiddels beschikbaar in versie 2.0. In DCAT worden klassen en eigenschappen van andere gevestigde vocabulaires (ADMS, FOAF) hergebruikt. DCAT maakt gebruik van een bewezen set gemeenschappelijke metadata genaamd "Dublin Core", die in 2009 als ISO 15836-standaard werd gepubliceerd.</p>
+<p>Dit document beschrijft het Nederlandse applicatieprofiel op DCAT-AP. Dit Nederlandse applicatieprofiel - DCAT-AP NL-  beantwoordt de vraag over hoe DCAT-AP in de praktijk wordt toegepast Nederland. </p>
+<section id="uitgangspunten"><div class="header-wrapper"><h3 id="x1-1-uitgangspunten"><bdi class="secno">1.1 </bdi>Uitgangspunten</h3><a class="self-link" href="#uitgangspunten" aria-label="Permalink for Section 1.1"></a></div>
+<p>Bij het opstellen zijn van het applicatie profiel zijn volgende uitgangspunten gehanteerd: </p>
+<p><strong>Toepassingsbereik</strong></p>
+<p>DCAT-AP NL faciliteert: </p>
+<ul>
+<li>de uitwisseling van metadata tussen Nederlandse datacatalogi van <del>van overheidsorganisaties</del> (semi-) overheidsorganisatie en overige organisaties die maatschappelijke relevante data willen delen. </li>
+<li>de uitwisseling van metadata tussen Nederlandse datacatalogi en EU datacatalogi</li>
+<li>de uitwisseling van metadata van primair open data, maar is hier niet toe beperkt</li>
+<li>de specifieke Nederlandse behoeften van metadata in datacatalogi</li>
+<li>de DCAT-AP annex for High Value Datasets (nog in ontwikkeling)</li>
+</ul>
+<p><strong>Informatiemodellering</strong></p>
+<p>DCAT-AP NL: </p>
+<ul>
+<li>is een verdere <strong>specialisatie</strong> van DCAT-AP<ul>
+<li>als je voldoet aan DCAT-AP NL voldoe je ook aan DCAT-AP</li>
+<li>bevat alle verplichte en aanbevolen properties DCAT-AP, waarbij de gebruiksvoorwaarden van DCAT-AP NL gelden </li>
+<li>properties uit DCAT-AP of DCAT die niet voorkomen in DCAT-AP NL zijn optioneel</li>
+</ul>
+</li>
+<li>introduceert geen uitbreidingen, <ul>
+<li>als die al uitgedrukt kunnen worden in DCAT-AP of DCAT, </li>
+<li>tenzij er een hele sterke behoefte / aanleiding toe is, en het DCAT-AP of DCAT vocabulary hierin NIET in voorziet</li>
+</ul>
+</li>
+<li>is zo generiek mogelijk van opzet en ligt zo dicht mogelijk bij DCAT-AP</li>
+<li>is opgesteld in het Nederlands</li>
+</ul>
+<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="4"><span>Noot</span><span class="issue-label">: index</span></div><p class="">
 Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config.js</code>.
-</p></div></section>
-  <section id="overzicht"><div class="header-wrapper"><h2 id="x2-overzicht"><bdi class="secno">2. </bdi>Overzicht</h2><a class="self-link" href="#overzicht" aria-label="Permalink for Section 2."></a></div>
+</p></div></section></section>
+  <section id="terminologie"><div class="header-wrapper"><h2 id="x2-terminologie"><bdi class="secno">2. </bdi>Terminologie</h2><a class="self-link" href="#terminologie" aria-label="Permalink for Section 2."></a></div>
+<p>Een <strong>applicatieprofiel</strong> is een specificatie voor gegevensuitwisseling dat bijkomende beperkingen introduceert voor het toepassen van vocabularia. Dergelijke bijkomende beperkingen kunnen de volgende elementen bevatten:</p>
+<ul>
+<li>verfijning van de terminologie (klassen en eigenschappen) consistent met de semantiek uit de betreffende specificaties met een welbepaald gebruik als doel;</li>
+<li>externe terminologie (klassen en eigenschappen) gebruikt voor nieuwe/extra termen die niet in de bestaande vocabularia voorkomen.</li>
+<li>meer nauwkeurigheid kan worden bereikt door klassen en klasse-attributen (eigenschappen) als verplicht, aanbevolen of optioneel te classificeren voor een bepaalde toepassing</li>
+</ul>
+<p>Een <strong>dataportaal</strong> is een op het web gebaseerd systeem dat een gegevenscatalogus bevat waarin datasets worden beschreven met behulp van metadata. Bovendien biedt een dataportaal diensten aan om het vinden en het hergebruik van de datasets te bevorderen en/of te faciliteren.</p>
+<p>Een <strong>dataset</strong> is een zinvolle verzameling van samenhangende gegevens,  die beheerd of gepubliceerd wordt door één agent,en in één of meer formaten beschikbaar of downloadbaar is.</p>
+<p>Een dataset is de weerslag van een conceptuele entiteit welke de collectie is van één of meerdere distributies. Elke <strong>distributie</strong> is de werkelijke data van de dataset in een bepaald formaat of een bepaalde aanbiedingsvorm.</p>
+<p>Een <strong>leverancier</strong> is een gegevensaanbieder (bijvoorbeeld een dataportaal dat metadata verstrekt). </p>
+<p>Een <strong>ontvanger</strong> is een gebruiker van gegevens (bijvoorbeeld een toepassing die metadata van een dataportaal verwerkt).</p>
+<p>Het DCAT-AP NL applicatieprofiel verdeelt de klassen en de eigenschappen in 3 verschillende niveaus. Daarbij geldt dat de niveaus (verplicht/aanbevolen/optioneel) alleen gelden voor de leveranciers. Ontvangers <em class="rfc2119">MOETEN</em> altijd in staat zijn om informatie over alle instanties van alle klassen en al hun eigenschappen te verwerken (maar niet noodzakelijkerwijs te parsen, converteren, opslaan, doorzoekbaar maken of weergeven, enz.). In de volgende secties worden klassen en eigenschappen aangeduid als "verplicht", "aanbevolen" of "optioneel". Deze termen hebben de volgende betekenis:</p>
+<ul>
+<li><p><strong>Verplichte klasse</strong>: Een leverancier <em class="rfc2119">MOET</em> informatie verstrekken over instanties van deze klasse. Een ontvanger <em class="rfc2119">MOET</em> informatie over instanties van deze klasse kunnen verwerken.</p>
+</li>
+<li><p><strong>Aanbevolen klasse</strong>: Een leverancier BEHOORT informatie te verstrekken over instanties van deze klasse indien dergelijke informatie beschikbaar is. Een ontvanger <em class="rfc2119">MOET</em> informatie over instanties van deze klasse kunnen verwerken.</p>
+</li>
+<li><p><strong>Optionele klasse</strong>: Een leverancier <em class="rfc2119">MAG</em> informatie verstrekken over instanties van deze klasse, maar is hier niet toe verplicht.</p>
+</li>
+<li><p><strong>Verplichte eigenschap</strong>: Een levenancier <em class="rfc2119">MOET</em> informatie verstrekken over deze eigenschap.</p>
+</li>
+<li><p><strong>Aanbevolen eigenschap</strong> : Een leverancier <em class="rfc2119">MOET</em> informatie verstrekken over deze eigenschap als deze beschikbaar is.</p>
+</li>
+<li><p><strong>Optionele eigenschap</strong>: Een leverancier <em class="rfc2119">MAG</em> informatie verstrekken over deze eigenschap, maar is hier niet toe verplicht.</p>
+</li>
+</ul>
+<p>In de gegeven context betekent de term "verwerken" dat ontvangers inkomende gegevens moeten accepteren en transparant beschikbaar moeten stellen voor toepassingen en diensten. Hiermee wordt niet voorgeschreven of geïmpliceerd welk type gegevensverwerking uiteindelijk door de betreffende toepassingen en diensten wordt uitgevoerd.</p>
+<p>De termen <em class="rfc2119">MOET</em>, BEHOORT en <em class="rfc2119">MAG</em> worden in dit document gebruikt volgens hun betekenissen gedefinieerd in <a href="https://www.rfc-editor.org/rfc/rfc2119" title="RFC211">RFC211</a>.</p>
+</section>
+  <section id="overzicht"><div class="header-wrapper"><h2 id="x3-overzicht"><bdi class="secno">3. </bdi>Overzicht</h2><a class="self-link" href="#overzicht" aria-label="Permalink for Section 3."></a></div>
 <p>Uitleg en toelichting over toepassing van dcat entiteiten in het profiel.</p>
-<section id="entiteiten"><div class="header-wrapper"><h3 id="x2-1-entiteiten"><bdi class="secno">2.1 </bdi>Entiteiten</h3><a class="self-link" href="#entiteiten" aria-label="Permalink for Section 2.1"></a></div>
-</section><section id="overig"><div class="header-wrapper"><h3 id="x2-2-overig"><bdi class="secno">2.2 </bdi>Overig</h3><a class="self-link" href="#overig" aria-label="Permalink for Section 2.2"></a></div>
+<section id="entiteiten"><div class="header-wrapper"><h3 id="x3-1-entiteiten"><bdi class="secno">3.1 </bdi>Entiteiten</h3><a class="self-link" href="#entiteiten" aria-label="Permalink for Section 3.1"></a></div>
+<section id="catalogus"><div class="header-wrapper"><h4 id="x3-1-1-catalogus"><bdi class="secno">3.1.1 </bdi>Catalogus</h4><a class="self-link" href="#catalogus" aria-label="Permalink for Section 3.1.1"></a></div>
+<table class="simple">
+<thead>
+<tr>
+<th>Eigenschap</th>
+<th>Verwacht Type</th>
+<th>Kardinaliteit</th>
+<th>Beschrijving</th>
+<th>Gebruik</th>
+<th>Codelijst</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>alternatieve identificator</td>
+<td>Identificator</td>
+<td>0..n</td>
+<td>Een alternatieve identificator (dan de unieke identificator) voor de catalogus kan hier beschreven worden.</td>
+<td>[Zie DCAT-AP]</td>
+<td></td>
+</tr>
+<tr>
+<td>beschrijving</td>
+<td>TaalString</td>
+<td>1</td>
+<td>Een bondige tekstuele omschrijving van de catalogus.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>contactinformatie</td>
+<td>Contactinfo</td>
+<td>1</td>
+<td>De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de catalogus.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>heeft DataService</td>
+<td>Dataservice</td>
+<td>0..*</td>
+<td>Een dataservice die deel uitmaakt van de catalogus.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>heeft Dataset</td>
+<td>Dataset</td>
+<td>0..*</td>
+<td>Een dataset die deel uitmaakt van de catalogus.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>identificator</td>
+<td>Literal</td>
+<td>1</td>
+<td>De unieke identificator voor de catalogus.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>licentie</td>
+<td>Licentie Document</td>
+<td>0..1</td>
+<td>De licentie van de catalogus.</td>
+<td>[Zie DCAT] De licentie voor het Vlaams Open Data Portaal is vastgelegd op <a href="https://data.vlaanderen.be/id/licentie/creative-commons-zero-verklaring/v1.0">https://data.vlaanderen.be/id/licentie/creative-commons-zero-verklaring/v1.0</a> .</td>
+<td></td>
+</tr>
+<tr>
+<td>record</td>
+<td>Catalogus Record</td>
+<td>0..*</td>
+<td>Een record beschrijft de registratie van één enkele dataset of dataservice die onderdeel is van de catalogus.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>titel</td>
+<td>TaalString</td>
+<td>1</td>
+<td>De naam van de catalogus.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>uitgever</td>
+<td>Agent</td>
+<td>1</td>
+<td>De uitgever, de entiteit die verantwoordelijk is voor het beschikbaar stellen, van de catalogus.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="dataset"><div class="header-wrapper"><h4 id="x3-1-2-dataset"><bdi class="secno">3.1.2 </bdi>Dataset</h4><a class="self-link" href="#dataset" aria-label="Permalink for Section 3.1.2"></a></div>
+<table class="simple">
+<thead>
+<tr>
+<th>Eigenschap</th>
+<th>Verwacht Type</th>
+<th>Kardinaliteit</th>
+<th>Beschrijving</th>
+<th>Gebruik</th>
+<th>Codelijst</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>alternatieve identificator</td>
+<td>Identificator</td>
+<td>0..n</td>
+<td>Een alternatieve identificator (dan de unieke identificator) voor een dataset kan hier beschreven worden.</td>
+<td>[Zie DCAT-AP]</td>
+<td></td>
+</tr>
+<tr>
+<td>beschrijving</td>
+<td>TaalString</td>
+<td>1</td>
+<td>Een bondige tekstuele omschrijving van de dataset.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>conform</td>
+<td>Standaard</td>
+<td>0..n</td>
+<td>Een standaard, schema, applicatieprofiel, vocabularium waaraan de dataset voldoet.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>contactinformatie</td>
+<td>ContactInfo</td>
+<td>1</td>
+<td>De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de dataset.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>distributie</td>
+<td>Distributie</td>
+<td>0..*</td>
+<td>Een beschikbare distributie van de dataset.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>identificator</td>
+<td>Literal</td>
+<td>1</td>
+<td>De unieke identificator van de dataset.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>landingspagina</td>
+<td>URI</td>
+<td>0..n</td>
+<td>Een algemene webpagina waarnaar kan worden genavigeerd in een webbrowser, met algemene informatie over de dataset, zijn distributies en/of aanvullende informatie.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>thema</td>
+<td>Code</td>
+<td>0..n</td>
+<td>De hoofdcategorie waartoe de dataset behoort.</td>
+<td>[Zie DCAT] Gebruik bij voorkeur de Belgische dcat:theme lijst, al dan niet aanvullend t.o.v. andere codelijsten. De Belgische dcat:theme lijst is een uitbreiding van de verplichte Europese codelijst. Het is dus voldoende om enkel de Belgische lijst te gebruiken.</td>
+<td>Link</td>
+</tr>
+<tr>
+<td>titel</td>
+<td>TaalString</td>
+<td>1</td>
+<td>De naam van de dataset.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>toegankelijkheid</td>
+<td>Code</td>
+<td>1</td>
+<td>De toegankelijkheid voor de dataset.</td>
+<td>[Zie DCAT] De waarde hiervan is steeds publiek voor Open Data. De waarde is dus steeds PUBLIC .</td>
+<td>Link</td>
+</tr>
+<tr>
+<td>trefwoord</td>
+<td>TaalString</td>
+<td>0..n</td>
+<td>Een trefwoord of tag die de resource beschrijft.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>versie</td>
+<td>String</td>
+<td>0..1</td>
+<td>Een unieke aanduiding van een variant van de dataset door middel van een versienummer of -naam van de dataset.</td>
+<td>[Zie DCAT-AP]</td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="dataservice"><div class="header-wrapper"><h4 id="x3-1-3-dataservice"><bdi class="secno">3.1.3 </bdi>Dataservice</h4><a class="self-link" href="#dataservice" aria-label="Permalink for Section 3.1.3"></a></div>
+<table class="simple">
+<thead>
+<tr>
+<th>Eigenschap</th>
+<th>Verwacht Type</th>
+<th>Kardinaliteit</th>
+<th>Beschrijving</th>
+<th>Gebruik</th>
+<th>Codelijst</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>alternatieve identificator</td>
+<td>Identificator</td>
+<td>0..n</td>
+<td>Een alternatieve identificator (dan de unieke identificator) voor een dataset kan hier beschreven worden.</td>
+<td>[Zie DCAT-AP]</td>
+<td></td>
+</tr>
+<tr>
+<td>beschrijving</td>
+<td>TaalString</td>
+<td>1</td>
+<td>Een bondige tekstuele omschrijving van de dataset.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>conform</td>
+<td>Standaard</td>
+<td>0..n</td>
+<td>Een standaard, schema, applicatieprofiel, vocabularium waaraan de dataset voldoet.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>contactinformatie</td>
+<td>ContactInfo</td>
+<td>1</td>
+<td>De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de dataset.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>distributie</td>
+<td>Distributie</td>
+<td>0..*</td>
+<td>Een beschikbare distributie van de dataset.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>identificator</td>
+<td>Literal</td>
+<td>1</td>
+<td>De unieke identificator van de dataset.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>landingspagina</td>
+<td>URI</td>
+<td>0..n</td>
+<td>Een algemene webpagina waarnaar kan worden genavigeerd in een webbrowser, met algemene informatie over de dataset, zijn distributies en/of aanvullende informatie.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>thema</td>
+<td>Code</td>
+<td>0..n</td>
+<td>De hoofdcategorie waartoe de dataset behoort.</td>
+<td>[Zie DCAT] Gebruik bij voorkeur de Belgische dcat:theme lijst, al dan niet aanvullend t.o.v. andere codelijsten. De Belgische dcat:theme lijst is een uitbreiding van de verplichte Europese codelijst. Het is dus voldoende om enkel de Belgische lijst te gebruiken.</td>
+<td>Link</td>
+</tr>
+<tr>
+<td>titel</td>
+<td>TaalString</td>
+<td>1</td>
+<td>De naam van de dataset.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>toegankelijkheid</td>
+<td>Code</td>
+<td>1</td>
+<td>De toegankelijkheid voor de dataset.</td>
+<td>[Zie DCAT] De waarde hiervan is steeds publiek voor Open Data. De waarde is dus steeds PUBLIC .</td>
+<td>Link</td>
+</tr>
+<tr>
+<td>trefwoord</td>
+<td>TaalString</td>
+<td>0..n</td>
+<td>Een trefwoord of tag die de resource beschrijft.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>versie</td>
+<td>String</td>
+<td>0..1</td>
+<td>Een unieke aanduiding van een variant van de dataset door middel van een versienummer of -naam van de dataset.</td>
+<td>[Zie DCAT-AP]</td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="distributie"><div class="header-wrapper"><h4 id="x3-1-4-distributie"><bdi class="secno">3.1.4 </bdi>Distributie</h4><a class="self-link" href="#distributie" aria-label="Permalink for Section 3.1.4"></a></div>
+<table class="simple">
+<thead>
+<tr>
+<th>Eigenschap</th>
+<th>Verwacht Type</th>
+<th>Kardinaliteit</th>
+<th>Beschrijving</th>
+<th>Gebruik</th>
+<th>Codelijst</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>alternatieve identificator</td>
+<td>Identificator</td>
+<td>0..n</td>
+<td>Een alternatieve identificator (dan de unieke identificator) voor een distributie kan hier beschreven worden.</td>
+<td>[Zie DCAT-AP]</td>
+<td></td>
+</tr>
+<tr>
+<td>downloadURL</td>
+<td>URI</td>
+<td>0..1</td>
+<td>De URL waar de data gedownload kan worden.</td>
+<td>[ Zie DCAT ] De URL start het downloaden van de distributie.</td>
+<td></td>
+</tr>
+<tr>
+<td>identificator</td>
+<td>Literal</td>
+<td>1</td>
+<td>De unieke identificator van de distributie.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>licentie</td>
+<td>Licentie Document</td>
+<td>0..1</td>
+<td>De licentie van de distributie.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>rechten</td>
+<td>Juridische bepaling</td>
+<td>0..n</td>
+<td>Bepalingen van juridische aard die gelden op de distributie.</td>
+<td>Omdat de voorwaarden kunnen verschillen naargelang de distributie is er gekozen om de licentie enkel op het meest granulaire niveau te behouden. Bijvoorkeur worden de Vlaamse modellicenties gebruikt.</td>
+<td></td>
+</tr>
+<tr>
+<td>titel</td>
+<td>TaalString</td>
+<td>0..1</td>
+<td>De naam van de distributie.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+<tr>
+<td>toegangsURL</td>
+<td>URI</td>
+<td>1</td>
+<td>Een URL waar de data kan gevonden worden.</td>
+<td>[ Zie DCAT] Deze url kan zowel verwijzen naar een beschrijvende pagina over hoe toegang tot de data kan verkregen worden als naar een directe link waarmee het downloaden van de distributie gestart kan worden. In het tweede geval wordt ook de eigenschap downloadURL bijkomend ingevuld.</td>
+<td></td>
+</tr>
+<tr>
+<td>wordt aangeboden door</td>
+<td>Dataservice</td>
+<td>0..*</td>
+<td>Een dataservice die deze distributie aanbiedt.</td>
+<td>Een valide absolute URL is gewenst. Relatieve URLs worden geïnterpreteerd t.o.v. het document en dat levert in de praktijk ongewenste interpretatiefouten op. Daarom worden relatieve URLs niet toegelaten.</td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="catalog-record"><div class="header-wrapper"><h4 id="x3-1-5-catalog-record"><bdi class="secno">3.1.5 </bdi>Catalog Record</h4><a class="self-link" href="#catalog-record" aria-label="Permalink for Section 3.1.5"></a></div>
+<table class="simple">
+<thead>
+<tr>
+<th>Eigenschap</th>
+<th>Verwacht Type</th>
+<th>Kardinaliteit</th>
+<th>Beschrijving</th>
+<th>Gebruik</th>
+<th>Codelijst</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>statuut</td>
+<td>Code</td>
+<td>1</td>
+<td>Een aanduiding van op welke basis de catalogusresource beschikbaar is.</td>
+<td>De waarde moet <a href="https://metadata.vlaanderen.be/id/GDI-Vlaanderen-Trefwoorden/VLOPENDATA">https://metadata.vlaanderen.be/id/GDI-Vlaanderen-Trefwoorden/VLOPENDATA</a> zijn</td>
+<td>Link</td>
+</tr>
+<tr>
+<td>uitgever</td>
+<td>Agent</td>
+<td>1</td>
+<td>De uitgever, de entiteit die verantwoordelijk is voor het beschikbaar stellen, van de resource in de catalogus.</td>
+<td>[Zie DCAT]</td>
+<td></td>
+</tr>
+</tbody></table>
+</section></section><section id="overig"><div class="header-wrapper"><h3 id="x3-2-overig"><bdi class="secno">3.2 </bdi>Overig</h3><a class="self-link" href="#overig" aria-label="Permalink for Section 3.2"></a></div>
 </section></section>
-  <section id="conformiteit"><div class="header-wrapper"><h2 id="x3-conformiteit"><bdi class="secno">3. </bdi>Conformiteit</h2><a class="self-link" href="#conformiteit" aria-label="Permalink for Section 3."></a></div>
+  <section id="conformiteit"><div class="header-wrapper"><h2 id="x4-conformiteit"><bdi class="secno">4. </bdi>Conformiteit</h2><a class="self-link" href="#conformiteit" aria-label="Permalink for Section 4."></a></div>
 <p>Uitleg over conformiteit mbt het profiel (inclusief gebruikadviezen en conventieregels)</p>
-<section id="conventies"><div class="header-wrapper"><h3 id="x3-1-conventies"><bdi class="secno">3.1 </bdi>Conventies</h3><a class="self-link" href="#conventies" aria-label="Permalink for Section 3.1"></a></div>
-</section><section id="toepassing-en-gebruiksadvies"><div class="header-wrapper"><h3 id="x3-2-toepassing-en-gebruiksadvies"><bdi class="secno">3.2 </bdi>Toepassing en gebruiksadvies</h3><a class="self-link" href="#toepassing-en-gebruiksadvies" aria-label="Permalink for Section 3.2"></a></div>
+<section id="conventies"><div class="header-wrapper"><h3 id="x4-1-conventies"><bdi class="secno">4.1 </bdi>Conventies</h3><a class="self-link" href="#conventies" aria-label="Permalink for Section 4.1"></a></div>
+</section><section id="toepassing-en-gebruiksadvies"><div class="header-wrapper"><h3 id="x4-2-toepassing-en-gebruiksadvies"><bdi class="secno">4.2 </bdi>Toepassing en gebruiksadvies</h3><a class="self-link" href="#toepassing-en-gebruiksadvies" aria-label="Permalink for Section 4.2"></a></div>
 </section></section>
 
-  <section id="conformance"><div class="header-wrapper"><h2 id="x4-conformiteit"><bdi class="secno">4. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 4."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
+  <section id="conformance"><div class="header-wrapper"><h2 id="x5-conformiteit"><bdi class="secno">5. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 5."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p><p>
+        De trefwoorden <em class="rfc2119">MAG</em>, <em class="rfc2119">MOET</em> en <em class="rfc2119">MOETEN</em> in dit
+        document moeten worden geïnterpreteerd als in
+        <a href="https://tools.ietf.org/html/bcp14">BCP 14</a>
+        [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a></cite>] [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8174" title="Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words">RFC8174</a></cite>]
+        als, en alleen als deze in hoofdletters zijn weergegeven, zoals hier
+        getoond.
+      </p></section>
   <section id="tof"></section>
   <section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div><section id="index-defined-here">
     <div class="header-wrapper"><h3 id="a-1-begrippen-gedefinieerd-door-deze-specificatie"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</h3><a class="self-link" href="#index-defined-here" aria-label="Permalink for Appendix A.1"></a></div>
@@ -441,7 +923,14 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config
 
 
 
-<p role="navigation" id="back-to-top">
+<section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="normatieve-referenties">
+    <div class="header-wrapper"><h3 id="b-1-normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Appendix B.1"></a></div>
+    <dl class="bibliography"><dt id="bib-rfc2119">[RFC2119]</dt><dd>
+      <a href="https://www.rfc-editor.org/rfc/rfc2119"><cite>Key words for use in RFCs to Indicate Requirement Levels</cite></a>. S. Bradner.  IETF. March 1997. Best Current Practice. URL: <a href="https://www.rfc-editor.org/rfc/rfc2119">https://www.rfc-editor.org/rfc/rfc2119</a>
+    </dd><dt id="bib-rfc8174">[RFC8174]</dt><dd>
+      <a href="https://www.rfc-editor.org/rfc/rfc8174"><cite>Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words</cite></a>. B. Leiba.  IETF. May 2017. Best Current Practice. URL: <a href="https://www.rfc-editor.org/rfc/rfc8174">https://www.rfc-editor.org/rfc/rfc8174</a>
+    </dd></dl>
+  </section></section><p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
   </p><script id="respec-dfn-panel">(() => {
 // @ts-check
